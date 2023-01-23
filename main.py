@@ -6,13 +6,13 @@ from PIL import Image
 import streamlit as st
 
 st.subheader('''Diabetes Detection:''')
-image = Image.open(r'C:\Users\Rushin\PycharmProjects\pythonProject\Image_1.png')
+image = Image.open(r'D:\project\Image_1.png')
 if image.mode != 'RGB':
     image = image.convert('RGB')
 st.image(image, use_column_width=True)
 
 # dataset#
-df = pd.read_csv(r'C:\Users\Rushin\PycharmProjects\pythonProject\diabetes dataset.csv')
+df = pd.read_csv(r'D:\project\diabetes dataset.csv')
 st.subheader('Data Information:')
 st.dataframe(df)
 
